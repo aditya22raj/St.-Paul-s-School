@@ -1,0 +1,199 @@
+<html>
+<head>
+  <style>
+    a:link, a:visited {
+      background-color: grey;
+      color: black;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    a:hover, a:active {
+      background-color: green;
+      color: white;
+    }
+
+
+    * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 650px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+    </style>
+<title>home</title>
+<body style="background-color:Ghostwhite;"> 
+
+<div style="text-align:center;">
+<center >  <img style="width: 10%;" src="logo.png"><img style="width: 9%;" src="logo2.png"></center> </center><br>
+</div><br><hr style="width: 60%;">
+<center>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>   
+  <a href="Academics.html"> Academics</a>
+  <a href="Admimistration.html">Admimistration</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="contactus.html">Contact us</a>
+  <a href="Acknowledgements.html">Acknowledgements</a>
+</center>
+<hr style="width: 60%;">
+<h1 style="font-size:50px; text-align:center;">St. Paul's School</h1>
+
+<p style="font-size:20px; text-align:center; line-height: 30px; margin-bottom: 50px;">CHURCH OF NORTH INDIA : DIOCESE OF PATNA. 
+<br>Ever Follow That Which Is Good.<br>Only I.C.S.E & I.S.C. School in Begusarai district</p>
+<hr style="width: 60%;">
+<br><br>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="img1.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="img2.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="img3.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="img4.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext"> 5/ 5</div>
+    <img src="img5.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+  <script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+  
+
+<br>
+  <hr style="width: 60%;">
+
+<h2 class="elementor-heading-title elementor-size-default"><center>INFRASTRUCTURE</center></h2>
+<img style="width: 33%;" src="img1.jpg">
+<img style="width: 33%;" src="img2.jpg"> 
+<img style="width: 33%;" src="img3.jpg">
+
+<img style="width: 33%;" src="img4.jpg">
+<img style="width: 33%;" src="img5.jpg"> 
+<img style="width: 33%;" src="img6.jpg">
+
+<img style="width: 33%;" src="img7.jpg">
+<img style="width: 33%;" src="img8.jpg"> 
+<img style="width: 33%;" src="img9.jpg">
+<br>
+<h1 style="font-size:50px; text-align:center;">Cinematic Shorts</h1>
+<div style="text-align:center;">
+<video src="vid1.mp4" controls></div>
+  <br><br><br><br>
+  <font color="black" size="11" face="Garamond"><center><b>GET IN TOUCH</b></center></font>
+  <br>
+  <font color="black" size="5" face="Garamond"><center><b>ADRESS</b></center></font>
+  <br>
+  <font color="black" size="6" face="Garamond"><center>Main Road Begusarai,Bihar,851101</center></font>
+<center>  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d460829.19041222066!2d85.28560573259074!3d25.530779492038363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f21acd85a58f3f%3A0x4573e4533db3d512!2sSt.%20Paul&#39;s%20School!5e0!3m2!1sen!2sin!4v1701869724500!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</center>
+<br><br><br>
+</body>
+</head>
+</html>

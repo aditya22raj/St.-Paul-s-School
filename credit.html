@@ -1,0 +1,102 @@
+<html>
+<head>
+  <style>
+    a:link, a:visited
+    {
+      background-color: grey;
+      color: black;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    a:hover, a:active 
+    {
+      background-color: green;
+      color: white;
+    }
+
+    .offset-header {
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  max-width: 500px;
+  margin: 10px 0;
+  }
+
+  .offset-header-odd,
+  .offset-header-even {
+    display: block;
+    animation-name: slideUp;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+  }
+  .offset-header-odd {
+    text-align: left;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+  }
+  .offset-header-even {
+    text-align: right;
+    animation-delay: 150ms;
+    animation-fill-mode: both;
+  }
+
+  @keyframes slideUp {
+    0%,
+    50% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+     
+    60%,
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    
+    }
+  }
+    </style>
+<title>home</title>
+<body style="background-color:Ghostwhite;"> 
+<div style="text-align:center;">
+<center>
+  <img style="width: 10%;" src="logo.png"><img style="width: 9%;" src="logo2.png">
+</center>
+<br>
+</div>
+<br>
+<hr style="width: 60%;">
+<center>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>   
+  <a href="Acedimics.html"> Acedimics</a>
+  <a href="Admimistration.html">Admimistration</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="contactus.html">Contact us</a>
+  <a href="Acknowledgements.html"> Acknowledgements:</a>
+</center>
+<hr style="width: 60%;">
+<h1 style="font-size:50px; text-align:center;">St. Paul's School
+</h1>
+<p style="font-size:20px; text-align:center; line-height: 30px; margin-bottom: 50px;">CHURCH OF NORTH INDIA : DIOCESE OF PATNA. 
+  <br>
+  Ever Follow That Which Is Good.
+  <br>
+  Only I.C.S.E & I.S.C. School in Begusarai district
+</p>
+<br>
+
+<div class="offset-header">
+  <h1 class="hero-header">
+    <span class="offset-header offset-header-odd">Elevate your space </span>
+    <span class="offset-header offset-header-even">with thoughtful design</span>
+  </h1>
+</div>
+</body>
+</head>
+</html>
